@@ -8,6 +8,7 @@ ADD myapp.rb myapp.rb
 ADD worker.rb worker.rb
 
 # Install Sinatra gem
+# bump
 RUN gem install sinatra --no-ri --no-rdoc
 
 # Print config vars
