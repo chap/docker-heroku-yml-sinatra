@@ -1,6 +1,8 @@
 build:
   docker:
     web: Dockerfile
+  config:
+    STAGING_CONFIG_VAR
 
 run:
   web: ruby myapp.rb -p $PORT
