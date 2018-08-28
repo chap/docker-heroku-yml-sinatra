@@ -1,0 +1,21 @@
+{
+  "name": "docker-heroku-yml-sinatra",
+  "scripts": {
+  },
+  "env": {
+    "STAGING_CONFIG_VAR": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
