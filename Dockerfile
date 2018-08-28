@@ -5,7 +5,6 @@ WORKDIR /
 
 # Copy Sinatra app into container
 ADD myapp.rb myapp.rb
-ADD worker.rb worker.rb
 
 # Install Sinatra gem
 # bump
