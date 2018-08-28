@@ -13,3 +13,5 @@ ARG STAGING_CONFIG_VAR
 
 # Print config vars
 RUN env
+
+# bump
