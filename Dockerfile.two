@@ -3,7 +3,7 @@ FROM ruby:2.5.1-alpine
 # Print config vars
 RUN env
 
-RUN echo "Dockerfile=$DOCKERFILE_TO_BUILD"
+RUN echo "Dockerfile=$DOCKERFILE_CONFIG"
 
 # Sets the working directory (Heroku crashes without it)
 WORKDIR /
