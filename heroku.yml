@@ -1,6 +1,6 @@
 build:
   docker:
-    web: Dockerfile.two
+    web: $DOCKERFILE_CONFIG
   config:
     STAGING_CONFIG_VAR: 0
 
