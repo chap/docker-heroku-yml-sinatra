@@ -6,3 +6,4 @@ build:
 
 run:
   web: ruby myapp.rb -p $PORT
+  sidekiq_orange_worker: ruby myapp.rb -p $PORT
