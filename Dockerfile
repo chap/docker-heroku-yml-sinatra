@@ -1,4 +1,4 @@
-FROM ruby:2.5.1-alpine
+FROM heroku/heroku:18
 
 # Sets the working directory (Heroku crashes without it)
 WORKDIR /
