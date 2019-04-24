@@ -8,7 +8,7 @@ ADD myapp.rb myapp.rb
 
 # heroku exec support 
 # https://devcenter.heroku.com/articles/exec#using-with-docker
-ADD ./.profile.d .profile.d
+ADD ./.profile.d /app/.profile.d
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Install Sinatra gem
