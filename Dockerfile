@@ -1,4 +1,4 @@
-FROM heroku/heroku:16
+FROM heroku/heroku:18
 
 # Sets the working directory (Heroku crashes without it)
 WORKDIR /
