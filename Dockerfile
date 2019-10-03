@@ -6,6 +6,8 @@ WORKDIR /
 # Copy Sinatra app into container
 ADD myapp.rb myapp.rb
 
+ADD zipme.tar.gz .
+
 # Install Sinatra gem
 RUN gem install sinatra --no-ri --no-rdoc
 
