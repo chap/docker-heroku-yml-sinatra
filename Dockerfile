@@ -11,6 +11,9 @@ RUN gem install sinatra --no-ri --no-rdoc
 
 ARG STAGING_CONFIG_VAR
 
+RUN echo SOURCE_VERSION
+RUN echo $SOURCE_VERSION
+
 # Print config vars
 RUN env
 
