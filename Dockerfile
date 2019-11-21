@@ -17,5 +17,3 @@ RUN echo $SOURCE_VERSION
 
 # Print config vars
 RUN env
-
-#bump
