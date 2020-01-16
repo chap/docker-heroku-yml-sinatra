@@ -1,7 +1,9 @@
 build:
   docker:
     web: Dockerfile
-    worker: Dockerfile.worker
+    worker: Dockerfile
   config:
     STAGING_CONFIG_VAR: 0
-
+run:
+  web: ruby myapp.rb -p $PORT
+  worker: ruby worker.rb
