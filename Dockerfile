@@ -17,3 +17,5 @@ RUN echo $SOURCE_VERSION
 
 # Print config vars
 RUN env
+
+CMD ruby myapp.rb -p $PORT
