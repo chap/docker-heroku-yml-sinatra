@@ -3,6 +3,5 @@ build:
     web: Dockerfile
   config:
     STAGING_CONFIG_VAR: 0
-
 run:
   web: ruby myapp.rb -p $PORT
