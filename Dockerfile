@@ -17,7 +17,7 @@ RUN echo 'deb https://cloud.r-project.org/bin/linux/ubuntu xenial/' >> /etc/apt/
 # for latest R version
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-RUN apt-get update && apt-get install -y vim nodejs build-essential git gzip locales r-base python3-dev python3-pip unixodbc unixodbc-dev postgresql-client-10
+RUN apt-get update && apt-get install -y vim nodejs build-essential git gzip locales r-base python3-dev python3-pip unixodbc unixodbc-dev postgresql-client-10 ruby
 
 # https://serverfault.com/questions/662034/how-do-i-resolve-this-locale-issue
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
