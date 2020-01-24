@@ -6,9 +6,24 @@ WORKDIR /
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
-# COPY package*.json ./
-# COPY .npmrc ./
-# COPY .netrc /root/.netrc
+RUN touch package123
+RUN touch package1234
+RUN touch package1235
+RUN touch package12356
+RUN touch package123567
+RUN touch package123568
+RUN touch package123569
+RUN touch package1235610
+RUN touch package1235611
+RUN touch package1235612
+RUN touch package1235613
+RUN touch package1235614
+RUN touch package1235615
+RUN touch package1235616
+RUN touch package1235617
+RUN touch package1235618
+RUN touch package1235619
+RUN touch package1235620
 
 RUN apt-get update && apt-get install -y curl wget
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
@@ -35,19 +50,19 @@ RUN npm install --only=production
 # Bundle app source
 COPY . .
 
-# RUN npm run build-isomorphic-utils
-# RUN npm run build-query-builder
-# RUN npm run build-monster
-# RUN npm run build-data-studio
-# RUN npm run build-analytics-portal
-# RUN bash scripts/copy-assets.sh
-# RUN bash scripts/hack-dependencies.sh
-# RUN bash scripts/purge-sources.sh
-# RUN Rscript init.R
-# RUN rm -rf .git
-# RUN rm -rf .nyc_output
-# RUN rm -rf test
-# RUN rm /root/.netrc
+RUN touch build-isomorphic-utils
+RUN touch build-query-builder
+RUN touch build-monster
+RUN touch build-data-studio
+RUN touch build-analytics-portal
+RUN touchcopy-assets.sh
+RUN touchhack-dependencies.sh
+RUN touchpurge-sources.sh
+RUN touch init.R
+RUN touch .git
+RUN touch .nyc_output
+RUN touch test
+RUN touch.netrc
 
 # EXPOSE 1337
 # CMD [ "pm2-runtime", "app.js" ]
