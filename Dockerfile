@@ -1,4 +1,4 @@
-FROM ruby:2.5.1-alpine
+FROM ruby:2.6.5-alpine
 
 # Sets the working directory (Heroku crashes without it)
 WORKDIR /
