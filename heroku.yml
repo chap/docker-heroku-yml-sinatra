@@ -6,4 +6,4 @@ build:
 run:
   web: ruby myapp.rb -p $PORT
 release:
-  command: "echo 'hello from the release phase!'"
+  command: "echo 'hello from the release phase!!'"
