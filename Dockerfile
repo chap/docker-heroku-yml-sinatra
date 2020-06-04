@@ -1,4 +1,4 @@
-FROM ruby:2.5.1-alpine
+FROM ruby:2.6.5-alpine
 
 # Sets the working directory (Heroku crashes without it)
 WORKDIR /
@@ -8,7 +8,7 @@ WORKDIR /
 ADD myapp.rb myapp.rb
 
 # Install Sinatra gem
-RUN gem install sinatra --no-ri --no-rdoc
+RUN gem install sinatra --no-document
 
 ARG STAGING_CONFIG_VAR
 ARG SOURCE_VERSION

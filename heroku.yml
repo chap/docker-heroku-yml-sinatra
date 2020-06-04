@@ -5,3 +5,7 @@ build:
     STAGING_CONFIG_VAR: 0
 run:
   web: ruby myapp.rb -p $PORT
+release:
+  command: 
+    - echo 'hello from the release phase!!'
+  image: web
