@@ -1,4 +1,4 @@
-FROM ruby:2.5.1-alpine
+FROM heroku/heroku:18
 
 # Sets the working directory (Heroku crashes without it)
 WORKDIR /
@@ -6,6 +6,11 @@ WORKDIR /
 
 # Copy Sinatra app into container
 ADD myapp.rb myapp.rb
+
+# heroku exec support 
+# https://devcenter.heroku.com/articles/exec#using-with-docker
+ADD ./.profile.d /app/.profile.d
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Install Sinatra gem
 RUN gem install sinatra --no-ri --no-rdoc
