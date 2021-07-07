@@ -5,6 +5,9 @@
   "env": {
     "STAGING_CONFIG_VAR": {
       "required": true
+    },
+    "DOCKERFILE_CONFIG": {
+      "value": "Dockerfile.two"
     }
   },
   "formation": {
