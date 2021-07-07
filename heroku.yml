@@ -5,3 +5,5 @@ build:
     STAGING_CONFIG_VAR: 0
 run:
   web: ruby myapp.rb -p $PORT
+  sidekiq_orange_worker: ruby myapp.rb -p $PORT
+  sidekiq_orange_worker2: ruby myapp.rb -p $PORT
